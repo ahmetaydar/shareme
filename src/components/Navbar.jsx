@@ -9,7 +9,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
     return (
       <div className="flex gap-2 md:gap-5 w-full mt-5 pb-7">
         <div className="flex justify-start items-center w-full px-2 rounded-md bg-white border-none outline-none focus-within:shadow-sm">
-          <IoMdAdd fontSize={21} className="ml-1" />
+          <IoMdSearch fontSize={21} className="ml-1" />
           <input
             className="p-2 w-full bg-white outline-none"
             type="text"
@@ -20,7 +20,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
           />
         </div>
         <div className="flex gap-3">
-          <Link to={`user-profile/${user?._id}`} classname="hidden md:block">
+          <Link to={`user-profile/${user?._id}`} className="hidden md:block">
             <img
               src={user.image}
               alt="user-pic"
